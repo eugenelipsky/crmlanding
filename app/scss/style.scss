@@ -415,6 +415,12 @@
     border-radius: 2px;
     padding: 13px 15px;
     margin-right: 47px;
+    transition: all .3s;
+
+    &:hover {
+      color: #FFD7D7;
+      background-color: #D43F3F;
+    }
   }
 
   span {
@@ -455,7 +461,82 @@
     border-radius: 2px;
     padding: 13px 15px;
     margin-left: 47px;
+    transition: all .3s;
+
+    &:hover {
+      color: #D2E1FF;
+      background-color: #3A79FF;
+    }
   }
+}
+.stats {
+  margin-bottom: 104px;
+}
+
+.stats__inner {
+  display: flex;
+}
+
+.stats__prod {
+  background-color: #5E80FF;
+  width: 100%;
+}
+
+.stats__users {
+  background-color: #E0E9FF;
+  width: 100%;
+}
+
+.stats__prod-content {
+  text-align: right;
+  padding: 70px 90px 66px 0;
+  color: #fff;
+  max-width: 340px;
+  margin-left: auto;
+}
+
+.stats__prod-img {
+  padding-bottom: 24px;
+}
+
+.stats__prod-title {
+  font-size: 48px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+.stats__prod-descr {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+
+.stats__users-content {
+  text-align: left;
+  padding: 70px 0 66px 90px;
+  color: #5E80FF;
+  max-width: 340px;
+  margin-right: auto;
+}
+
+.stats__users-img {
+  padding-bottom: 24px;
+}
+
+.stats__users-title {
+  font-size: 48px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+.stats__users-descr {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
 }
 
 @import 'media';
