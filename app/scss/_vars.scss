@@ -1,0 +1,26 @@
+%dots-styles {
+  li{
+    display: inline-block;
+
+    & + li {
+      padding-left: 12px;
+    }
+
+    &.slick-active {
+      button {
+        background-color: #5283FF;
+      }
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      font-size: 0;
+      background-color: #D1D6E3;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+    }
+  }
+}

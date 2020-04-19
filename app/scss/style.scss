@@ -752,32 +752,108 @@
     bottom: -110px;
     left: 50%;
     transform: translateX(-50%);
-
-    li {
-      display: inline-block;
-
-      & + li {
-        padding-left: 12px;
-      }
-
-      &.slick-active {
-        button {
-          background-color: #5283FF;
-        }
-      }
-
-      button {
-        padding: 0;
-        border: none;
-        font-size: 0;
-        background-color: #D1D6E3;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-
-      }
-    }
+    @extend %dots-styles;
   }
+}
+
+.quotes {
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+  padding: 109px 0 0 0;
+}
+
+.quotes__inner {
+  max-width: 1163px;
+  margin-left: auto;
+  display: flex;
+}
+
+.quotes__info {
+  max-width: 333px;
+  width: 100%;
+  margin-right: 60px;
+  padding-top: 37px;
+}
+
+.quotes__slider-wrapper {
+  max-width: 770px;
+  overflow: hidden;
+  padding-bottom: 139px;
+}
+
+.quotes__slider-item {
+  max-width: 423px;
+
+}
+
+.quotes__slider {
+  .slick-slide {
+    margin: 0 54px;
+  }
+
+  .slick-list {
+    overflow: visible;
+    position: relative;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -80px;
+    left: 160px;
+    @extend %dots-styles;
+  }
+}
+
+.quotes__slider-box {
+  background-color: #fff;
+  padding: 41px 71px 53px 69px;
+  border: 1px solid #D8E3FE;
+  position: relative;
+}
+
+.quotes__info-subtitle {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+  margin-bottom: 31px;
+}
+
+.quotes__info-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #3D4F9F;
+  margin-bottom: 14px;
+}
+
+.quotes__info-descr {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #A4ABC8;
+}
+
+.quotes__slider-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -31px;
+ img {
+   border-radius: 50%;
+   overflow: hidden;
+   width: 63px;
+   height: 63px;
+ }
+}
+
+.quotes__slider-box__text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #676F95;
 }
 
 @import 'media';

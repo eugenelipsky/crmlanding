@@ -12,5 +12,11 @@ $(function () {
         centerMode: true,
         variableWidth: true
     });
+
+    $('.quotes__slider').slick({
+        variableWidth: true,
+        arrows: false,
+        dots: true
+    });
 });
 
