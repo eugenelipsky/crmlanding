@@ -18,5 +18,10 @@ $(function () {
         arrows: false,
         dots: true
     });
+
+    $('.faq__accordion').accordion({
+        "transitionSpeed": 500,
+        singleOpen: true
+    });
 });
 
