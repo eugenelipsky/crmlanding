@@ -1095,4 +1095,39 @@
     }
   }
 }
+
+.footer {
+  margin-bottom: 93px;
+  padding-top: 93px;
+  border-top: 1px solid #D8E3FE;;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 99px 0;
+}
+
+.footer__copy,
+.footer__author {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #AEB8D0;
+}
+
+.footer__author {
+  a {
+    color: #AEB8D0;
+    opacity: .8;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #4D6CE1;
+      opacity: 1;
+    }
+  }
+}
 @import 'media';
