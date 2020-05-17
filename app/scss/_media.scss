@@ -17,6 +17,10 @@
   .resources__slider-img__main {
     box-shadow: none;
   }
+
+  .faq {
+    margin: 15px;
+  }
 }
 @media (max-width: 915px) {
   .menu__list {
@@ -51,6 +55,43 @@
   }
   .menu__list-mobile {
     display: block;
+  }
+}
+
+@media (max-width: 850px) {
+  .quotes {
+    padding: 50px 0 0 0;
+  }
+  .quotes__inner {
+    display: block;
+    padding: 0 15px;
+  }
+
+  .quotes__info {
+    padding-top: 0;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .getstarted {
+    margin-bottom: 35px;
+  }
+
+  .newsletter__inner {
+    display: block;
+  }
+
+  .newsletter {
+    margin: 0 auto 35px;
+  }
+
+  .newsletter__info {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .newsletter__form form {
+    margin: 0 auto;
   }
 }
 
@@ -158,6 +199,46 @@
     display: none;
   }
 
+  .faq__content-text {
+    padding-right: 10px;
+  }
+
+  .newsletter__form form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-left: 0;
+    }
+  }
+
+  .footer__bottom {
+    padding: 20px 0 0;
+  }
+
+  .footer {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .quotes__slider-box {
+    padding: 10px 10px 40px 10px;
+  }
+
+  .faq__content-inner {
+    display: block;
+  }
+  .faq__content-text {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -183,11 +264,34 @@
   .resources__slider-img__main {
     display: none;
   }
+
+  .quotes {
+    display: none;
+  }
 }
 
 @media (max-width: 440px) {
   .clients__logo {
     justify-content: center;
+  }
+
+  .getstarted {
+    margin-bottom: 30px;
+  }
+
+  .getstarted-subtitle {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .faq__content-inner {
+    padding: 16px 15px 53px 15px;
+  }
+  .faq__control {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 13px;
   }
 }
 
@@ -203,7 +307,12 @@
     }
   }
 
-
+  .getstarted-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 20px;
+  }
 
 }
 

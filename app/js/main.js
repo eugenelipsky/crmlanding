@@ -28,11 +28,22 @@ $(function () {
             }
         ]
     });
+    $(window).resize(function(){
+        $('.quotes__slider')[0].slick.refresh();
+    });
 
     $('.quotes__slider').slick({
         variableWidth: true,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.faq__accordion').accordion({
